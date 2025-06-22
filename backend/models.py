@@ -8,3 +8,8 @@ class EventCreate(BaseModel):
     service: str
     action: str
     timestamp: Optional[datetime] = None
+
+class NodeCreate(BaseModel):
+    node_id: str
+    location: Optional[str] = None
+    type: Optional[str] = "generic"
